@@ -100,6 +100,12 @@
 
 var time_left = [14, 0, 0, 0]
 
+function pad_num(num, size) {
+  var s = "000" + num;
+  console.log(s.substr(s.length-size))
+  return s.substr(s.length-size)
+}
+
 function update_timer(time_left) {
   var days = time_left[0];
   var hours = time_left[1];
@@ -123,10 +129,10 @@ function update_timer(time_left) {
     }
   }
 
-  time_left[0] = days;
-  time_left[1] = hours;
-  time_left[2] = minutes;
-  time_left[3] = seconds;
+  time_left[0] = pad_num(days, 2);
+  time_left[1] = pad_num(hours, 2);
+  time_left[2] = pad_num(minutes, 2);
+  time_left[3] = pad_num(seconds, 2);
   return time_left;
 }
 

@@ -12,7 +12,7 @@ body {
     font-size: 32px;
     font-weight: 900;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 250px;
     letter-spacing: 8px;
 }
 
@@ -25,7 +25,6 @@ h2 {
 }
 
 .timer {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
 }
@@ -33,7 +32,7 @@ h2 {
 .time-units {
     font-family: 'Red Hat Text', serif;
     font-weight: 700;
-    margin: auto 50px;
+    margin: 25px 50px;
     text-align: center;
     color: hsl(345, 95%, 68%)
 }
@@ -81,7 +80,7 @@ svg:hover {
     fill: hsl(345, 95%, 68%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px)  {
     #title {
         font-family: 'Red Hat Text', serif;
         font-size: 16px;
